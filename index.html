@@ -7,126 +7,127 @@
 <meta name="description" content="Shop Ayushi Herbal Soap: Neem, Aloe Vera, and Neem & Multani Mitti soaps. Order through WhatsApp.">
 <title>Ayushi Herbal Soap | Nature's Care</title>
 <style>
-:root{--green:#123f27;--green2:#1f6b3d;--lime:#c5dd7a;--cream:#fbf8eb;--gold:#c7a54b;--ink:#203126;--muted:#637166;--white:#fff}
+:root{--green:#123f27;--green2:#1f6b3d;--lime:#c5dd7a;--cream:#fbf8eb;--ink:#203126;--muted:#637166;--line:#e4e8d8}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
 a{color:inherit;text-decoration:none}
+button{font:inherit;cursor:pointer}
 .wrap{width:min(1120px,92%);margin:auto}
-.topbar{background:var(--green);color:#f7f4df;text-align:center;padding:9px 12px;font-size:13px;letter-spacing:.2px}
-header{background:rgba(251,248,235,.96);border-bottom:1px solid #e4e7d6;position:sticky;top:0;z-index:5;backdrop-filter:blur(10px)}
-.nav{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:12px 0}
-.brand{display:flex;align-items:center;gap:10px;font-weight:800;color:var(--green);font-size:20px}
-.brandmark{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:var(--lime);font-size:23px}
-.navlinks{display:flex;gap:24px;font-size:14px;color:#334c39}
-.navlinks a:hover{color:var(--green2)}
-.cartbtn,.btn{border:0;cursor:pointer;border-radius:999px;background:var(--green);color:white;padding:12px 18px;font-weight:700;display:inline-flex;align-items:center;justify-content:center;gap:8px}
-.cartbtn{padding:10px 15px}
-.quick-links{display:flex;gap:10px;padding:0 0 12px;align-items:center}
-.quick-links a{display:inline-flex;align-items:center;justify-content:center;gap:7px;border-radius:999px;padding:8px 13px;font-size:13px;font-weight:800;border:1px solid #d9e3ce;background:#fff;color:var(--green);flex:1}
-.quick-links a:first-child{background:var(--green);color:#fff;border-color:var(--green)}
-.quick-links a:hover{filter:brightness(.97)}
-section{padding:48px 0}
-#products{padding:24px 0 30px}
-.section-head{text-align:center;margin:0 auto 20px;max-width:650px}
-.eyebrow{color:var(--green2);text-transform:uppercase;letter-spacing:2px;font-weight:800;font-size:12px}
-.section-head h2{font-size:clamp(28px,3vw,40px);color:var(--green);margin:8px 0}
+.topbar{background:var(--green);color:#f7f4df;text-align:center;padding:8px 12px;font-size:13px;letter-spacing:.2px}
+header{position:sticky;top:0;z-index:5;background:#fbf8ebf7;border-bottom:1px solid var(--line);backdrop-filter:blur(10px)}
+.nav{position:relative;min-height:112px;display:flex;align-items:center;justify-content:center;padding:9px 0}
+.brand{display:flex;flex-direction:column;align-items:center;gap:4px;text-align:center;color:var(--green);font-size:24px;font-weight:900;line-height:1.1;letter-spacing:.5px}
+.brandmark{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--green);color:var(--lime);font-size:28px;border:2px solid #d7e7b5;box-shadow:0 5px 14px #123f2718}
+.brand small{font-size:10px;letter-spacing:2.6px;color:#506a52}
+.cartbtn,.btn{border:0;border-radius:999px;background:var(--green);color:white;padding:12px 18px;font-weight:800;display:inline-flex;align-items:center;justify-content:center;gap:8px}
+.cartbtn{position:absolute;right:0;top:50%;transform:translateY(-50%);padding:10px 14px;font-size:13px}
+section{padding:44px 0}
+.section-head{text-align:center;margin:0 auto 22px;max-width:690px}
+.eyebrow{color:var(--green2);text-transform:uppercase;letter-spacing:2.2px;font-weight:800;font-size:12px}
+.section-head h2{font-size:clamp(28px,3.2vw,40px);line-height:1.1;color:var(--green);margin:8px 0}
 .section-head p{color:var(--muted);margin:0}
-.products{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.product{background:white;border:1px solid #e4e8d8;border-radius:20px;overflow:hidden;box-shadow:0 8px 28px #233c1b08}
-.product-visual{height:220px;display:grid;place-items:center;position:relative;background:linear-gradient(145deg,#e9f0d2,#f8f4df)}
-.product-visual.aloe{background:linear-gradient(145deg,#e4efc8,#d5e7b6)}
-.product-visual.clay{background:linear-gradient(145deg,#f0e5c6,#e5d7ad)}
-.mini-soap{height:130px;width:105px;border-radius:20px 20px 27px 27px;display:grid;place-items:center;font-size:34px;color:#fff;border:2px solid #ffffff9c;box-shadow:inset 6px 3px 10px #ffffff50,inset -7px -7px 12px #0002,0 18px 22px #263a202b;transform:rotate(-7deg)}
-.neem .mini-soap{background:linear-gradient(135deg,#46a34f,#07522d)}
-.aloe .mini-soap{background:linear-gradient(135deg,#76b85a,#26713a)}
-.clay .mini-soap{background:linear-gradient(135deg,#d8bd70,#a78b45);color:#fff6d4}
-.tag{position:absolute;top:14px;left:14px;background:#fff;border-radius:999px;padding:5px 10px;color:var(--green);font-size:11px;font-weight:800}
-.product-body{padding:18px}
-.product-body h3{margin:0 0 6px;color:var(--green);font-size:20px}
-.product-body p{color:var(--muted);font-size:14px;min-height:44px;margin:0 0 14px}
-.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px}
-.price{font-size:21px;font-weight:800;color:var(--green)}
-.add{background:#edf3df;color:var(--green);border:1px solid #d2dfbc;border-radius:999px;padding:10px 13px;font-weight:800;cursor:pointer}
+#products{padding:26px 0 30px}
+.products{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.product{background:#fff;border:1px solid var(--line);border-radius:20px;overflow:hidden;box-shadow:0 8px 28px #233c1b08;display:flex;flex-direction:column}
+.product-visual{height:230px;position:relative;overflow:hidden;background:#e8efd3}
+.product-photo{width:100%;height:100%;display:block;object-fit:cover;object-position:center}
+.tag{position:absolute;top:12px;left:12px;background:#ffffffed;color:var(--green);border-radius:999px;padding:5px 10px;font-size:10px;font-weight:900;letter-spacing:.3px;box-shadow:0 2px 8px #0000000b}
+.product-body{padding:16px;display:flex;flex-direction:column;flex:1}
+.product-body h3{margin:0 0 7px;color:var(--green);font-size:19px;line-height:1.25}
+.product-body p{color:var(--muted);font-size:13px;line-height:1.45;margin:0 0 16px;min-height:38px}
+.product-bottom{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:auto}
+.price{font-size:23px;font-weight:900;color:var(--green)}
+.add{background:#edf3df;color:var(--green);border:1px solid #d2dfbc;border-radius:999px;padding:10px 12px;font-weight:800;font-size:13px;white-space:nowrap}
 .add:hover{background:#dfeacb}
-.hero{padding:54px 0 45px;background:radial-gradient(circle at 80% 25%,#e5edc2 0,transparent 34%),linear-gradient(120deg,#f9f5df,#eff2d9)}
-.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:42px;align-items:center}
-.hero h1{font-size:clamp(38px,5vw,64px);line-height:1.05;color:var(--green);margin:14px 0}
+.support-section{padding:22px 0 28px;background:#edf1dc;border-top:1px solid #e1e7ce;border-bottom:1px solid #e1e7ce}
+.support-inner{display:flex;align-items:center;justify-content:space-between;gap:22px}
+.support-copy h2{color:var(--green);font-size:clamp(21px,2.6vw,29px);margin:5px 0}
+.support-copy p{margin:0;color:var(--muted);font-size:14px}
+.support-actions{display:flex;gap:10px;flex-wrap:wrap}
+.support-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 16px;border-radius:999px;font-size:13px;font-weight:900;white-space:nowrap;border:1px solid #cfdbc0}
+.support-btn.whatsapp{background:#087f3d;color:#fff;border-color:#087f3d}
+.support-btn.instagram{background:#fff;color:var(--green)}
+.support-btn:hover{filter:brightness(.97)}
+.hero{padding:44px 0;background:radial-gradient(circle at 80% 25%,#e5edc2 0,transparent 34%),linear-gradient(120deg,#f9f5df,#eff2d9)}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:38px;align-items:center}
+.hero h1{font-size:clamp(36px,4.8vw,58px);line-height:1.04;color:var(--green);margin:12px 0}
 .hero h1 span{color:var(--green2)}
-.hero p{font-size:17px;max-width:520px;color:#536454}
-.hero-actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+.hero p{font-size:16px;max-width:540px;color:#536454}
+.hero-actions{display:flex;gap:11px;flex-wrap:wrap;margin-top:21px}
 .btn.secondary{background:transparent;border:1px solid #9dad8e;color:var(--green)}
-.hero-art{min-height:350px;border-radius:32px;background:linear-gradient(145deg,#d9e8b1,#f8f2d5);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:1px solid #d5dfbd}
-.leaf{position:absolute;font-size:100px;opacity:.18;transform:rotate(-25deg)}
+.hero-art{min-height:300px;border-radius:28px;background:linear-gradient(145deg,#d9e8b1,#f8f2d5);display:flex;align-items:center;justify-content:center;position:relative;overflow:hidden;border:1px solid #d5dfbd}
+.leaf{position:absolute;font-size:85px;opacity:.18;transform:rotate(-25deg)}
 .leaf.l1{top:0;left:10px}
 .leaf.l2{bottom:0;right:5px;transform:rotate(25deg)}
-.soap-stack{position:relative;display:flex;align-items:center;justify-content:center;gap:12px;transform:rotate(-5deg)}
-.soap{width:112px;height:170px;border-radius:25px 25px 32px 32px;box-shadow:inset 7px 0 12px #ffffff5e,inset -8px -8px 14px #113a2440,0 22px 24px #234b2530;display:grid;place-items:center;color:#f5f1d5;font-size:26px;border:2px solid #ffffff70}
-.soap:nth-child(1){background:linear-gradient(145deg,#348746,#0d4b2b);transform:rotate(-10deg) translateY(12px)}
-.soap:nth-child(2){background:linear-gradient(145deg,#e9d58b,#bba653);transform:translateY(-16px);color:#5a4a1c}
-.soap:nth-child(3){background:linear-gradient(145deg,#4f9c55,#176234);transform:rotate(10deg) translateY(12px)}
-.art-caption{position:absolute;bottom:18px;background:#ffffffc9;padding:8px 16px;border-radius:999px;color:var(--green);font-size:12px;font-weight:700}
+.soap-stack{position:relative;display:flex;align-items:center;justify-content:center;gap:10px;transform:rotate(-5deg)}
+.soap{width:90px;height:140px;border-radius:22px 22px 29px 29px;box-shadow:inset 7px 0 12px #ffffff5e,inset -8px -8px 14px #113a2440,0 22px 24px #234b2530;display:grid;place-items:center;color:#f5f1d5;font-size:24px;border:2px solid #ffffff70}
+.soap:nth-child(1){background:linear-gradient(145deg,#348746,#0d4b2b);transform:rotate(-10deg) translateY(10px)}
+.soap:nth-child(2){background:linear-gradient(145deg,#e9d58b,#bba653);transform:translateY(-13px);color:#5a4a1c}
+.soap:nth-child(3){background:linear-gradient(145deg,#4f9c55,#176234);transform:rotate(10deg) translateY(10px)}
+.art-caption{position:absolute;bottom:16px;background:#ffffffd9;padding:8px 14px;border-radius:999px;color:var(--green);font-size:11px;font-weight:800}
 .trust{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;padding:22px 0}
-.trust div{background:white;border:1px solid #e7e9d8;border-radius:14px;padding:15px;text-align:center;color:var(--green);font-size:13px;font-weight:700}
+.trust div{background:white;border:1px solid #e7e9d8;border-radius:14px;padding:14px;text-align:center;color:var(--green);font-size:13px;font-weight:700}
 .trust strong{display:block;font-size:22px;margin-bottom:3px}
 .about{background:#edf1dc}
-.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:center}
-.about-badge{border-radius:28px;background:var(--green);color:#f9f4d7;padding:34px;text-align:center}
-.about-badge .big{font-size:46px;font-weight:800;color:var(--lime)}
-.about h2{font-size:35px;line-height:1.1;color:var(--green);margin:8px 0 14px}
+.about-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:32px;align-items:center}
+.about-badge{border-radius:26px;background:var(--green);color:#f9f4d7;padding:30px;text-align:center}
+.about-badge .big{font-size:42px;font-weight:900;color:var(--lime)}
+.about h2{font-size:clamp(28px,3vw,36px);line-height:1.1;color:var(--green);margin:8px 0 14px}
 .about p{color:#526351}
-.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:18px}
-.checks span{font-size:14px;font-weight:700;color:var(--green)}
+.checks{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:16px}
+.checks span{font-size:13px;font-weight:700;color:var(--green)}
 .checks span:before{content:"✓";color:var(--green2);font-weight:900;margin-right:8px}
-.order-band{background:var(--green);color:white;padding:35px 0}
+.order-band{background:var(--green);color:white;padding:32px 0}
 .order-row{display:flex;align-items:center;justify-content:space-between;gap:20px}
-.order-row h2{margin:0;font-size:27px}
+.order-row h2{margin:0;font-size:26px}
 .order-row p{margin:5px 0 0;color:#dce8ce}
 .order-row .btn{background:var(--lime);color:var(--green);white-space:nowrap}
-footer{padding:35px 0 20px;background:#0d2f1d;color:#e8efd9}
-.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:25px}
-.footer-grid h3,.footer-grid h4{margin:0 0 10px;color:#d7e7a0}
+footer{padding:32px 0 18px;background:#0d2f1d;color:#e8efd9}
+.footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:24px}
+.footer-grid h3,.footer-grid h4{margin:0 0 9px;color:#d7e7a0}
 .footer-grid p,.footer-grid a{font-size:13px;color:#d2ddcd}
 .footer-grid a{display:block;margin:6px 0}
-.copyright{border-top:1px solid #31513b;margin-top:25px;padding-top:15px;font-size:12px;color:#b7c8b3;display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+.copyright{border-top:1px solid #31513b;margin-top:22px;padding-top:14px;font-size:12px;color:#b7c8b3;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 .cartpanel{position:fixed;inset:0;background:#0b1d1280;z-index:10;display:none;justify-content:flex-end}
 .cartpanel.open{display:flex}
 .cart{background:var(--cream);height:100%;width:min(440px,100%);padding:22px;overflow:auto;box-shadow:-15px 0 40px #0002}
 .carthead{display:flex;justify-content:space-between;align-items:center}
 .carthead h2{color:var(--green)}
-.close{border:0;background:#e6ecd9;border-radius:50%;width:38px;height:38px;font-size:20px;cursor:pointer}
+.close{border:0;border-radius:50%;width:38px;height:38px;background:#e6ecd9;color:var(--green);font-size:22px}
 .cartitem{display:flex;justify-content:space-between;gap:12px;padding:13px 0;border-bottom:1px solid #dfe4d4}
 .qty{display:flex;align-items:center;gap:8px}
-.qty button{border:0;border-radius:50%;width:26px;height:26px;background:#dce8ca;color:var(--green);font-weight:900;cursor:pointer}
-.total{display:flex;justify-content:space-between;font-size:20px;font-weight:800;color:var(--green);padding:20px 0}
+.qty button{border:0;border-radius:50%;width:26px;height:26px;background:#dce8ca;color:var(--green);font-weight:900}
+.total{display:flex;justify-content:space-between;font-size:20px;font-weight:900;color:var(--green);padding:18px 0}
 .field{display:block;margin:12px 0}
-.field label{display:block;font-size:13px;font-weight:700;margin-bottom:5px}
+.field label{display:block;font-size:13px;font-weight:800;margin-bottom:5px}
 .field input,.field textarea{width:100%;padding:12px;border:1px solid #ccd7bf;border-radius:10px;background:#fff;font:inherit}
 .full{width:100%;margin-top:10px}
 .smallnote{font-size:12px;color:#64705f}
 @media(max-width:760px){
-.navlinks{display:none}
-.nav{padding:10px 0}
-.brand{font-size:18px}
-.brandmark{width:38px;height:38px}
-.quick-links{gap:8px;padding-bottom:10px}
-.quick-links a{padding:8px 8px;font-size:12px}
-.hero{padding:28px 0}
-.hero-grid,.about-grid{grid-template-columns:1fr}
-.hero-art{min-height:250px}
-.soap{width:72px;height:116px}
-.trust{grid-template-columns:1fr 1fr}
+.nav{min-height:104px}
+.brand{font-size:21px}
+.brandmark{width:43px;height:43px;font-size:25px}
+.brand small{font-size:9px;letter-spacing:2.3px}
+.cartbtn{padding:8px 10px;font-size:12px}
 .products{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
 .product{border-radius:15px}
-.product-visual{height:130px}
-.mini-soap{height:85px;width:67px;border-radius:16px;font-size:25px}
+.product-visual{height:135px}
 .tag{top:8px;left:7px;padding:4px 7px;font-size:9px}
 .product-body{padding:11px}
-.product-body h3{font-size:15px;line-height:1.3;min-height:39px}
-.product-body p{font-size:12px;line-height:1.4;min-height:50px;margin-bottom:10px}
-.product-bottom{align-items:flex-start;flex-direction:column;gap:8px}
-.price{font-size:18px}
-.add{padding:9px 10px;font-size:12px;width:100%}
+.product-body h3{font-size:15px;line-height:1.3;min-height:38px}
+.product-body p{font-size:12px;line-height:1.4;min-height:48px;margin-bottom:10px}
+.product-bottom{align-items:stretch;flex-direction:column;gap:8px}
+.price{font-size:19px}
+.add{font-size:12px;width:100%;padding:10px 8px}
+.support-inner{flex-direction:column;align-items:stretch;gap:13px;text-align:center}
+.support-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.support-btn{white-space:normal;padding:12px 7px;font-size:12px}
+.hero{padding:30px 0}
+.hero-grid,.about-grid{grid-template-columns:1fr}
+.hero-art{min-height:240px}
+.soap{width:72px;height:112px}
+.trust{grid-template-columns:1fr 1fr}
 .about-badge{padding:24px}
 .order-row{align-items:flex-start;flex-direction:column}
 .footer-grid{grid-template-columns:1fr 1fr}
@@ -139,33 +140,21 @@ footer{padding:35px 0 20px;background:#0d2f1d;color:#e8efd9}
 .product-body h3{font-size:14px}
 .product-body p{font-size:11px}
 .add{font-size:11px}
+.cartbtn{right:0;padding:7px 8px}
 }
-@media(min-width:761px){.product-visual{height:235px}}
 </style>
 </head>
 <body>
 <div class="topbar">Nature-inspired care • Thoughtfully crafted herbal soaps</div>
-
 <header>
 <div class="wrap nav">
-<a class="brand" href="#products">
+<a class="brand" href="#products" aria-label="Ayushi Herbal Soap home">
 <span class="brandmark">❧</span>
-<span>AYUSHI<br><small style="font-size:11px;letter-spacing:2px">HERBAL SOAP</small></span>
+<span>AYUSHI<br><small>HERBAL SOAP</small></span>
 </a>
-<nav class="navlinks">
-<a href="#products">Home</a>
-<a href="#products">Shop soaps</a>
-<a href="#about">Our story</a>
-<a href="#contact">Contact</a>
-</nav>
 <button class="cartbtn" onclick="openCart()">Bag <span id="cart-count">0</span></button>
 </div>
-<div class="wrap quick-links">
-<a href="https://wa.me/919358402756" target="_blank" rel="noopener">WhatsApp Support</a>
-<a href="https://www.instagram.com/ayushi_herbalsoap/" target="_blank" rel="noopener">Instagram</a>
-</div>
 </header>
-
 <main>
 <section id="products">
 <div class="wrap">
@@ -176,53 +165,54 @@ footer{padding:35px 0 20px;background:#0d2f1d;color:#e8efd9}
 </div>
 <div class="products">
 <article class="product">
-<div class="product-visual neem">
+<div class="product-visual">
 <span class="tag">CLASSIC BLEND</span>
-<div class="mini-soap">✿</div>
+<img class="product-photo" src="" data-photo="neem" alt="Neem herbal soap bar with neem leaves" fetchpriority="high">
 </div>
 <div class="product-body">
 <h3>Neem Herbal Soap</h3>
 <p>A fresh, green-inspired bathing bar for your everyday routine.</p>
-<div class="product-bottom">
-<span class="price">₹40</span>
-<button class="add" onclick="addToCart('neem')">Add to bag +</button>
-</div>
+<div class="product-bottom"><span class="price">₹40</span><button class="add" onclick="addToCart('neem')">Add to bag +</button></div>
 </div>
 </article>
-
 <article class="product">
-<div class="product-visual aloe">
+<div class="product-visual">
 <span class="tag">FRESH &amp; GENTLE</span>
-<div class="mini-soap">❧</div>
+<img class="product-photo" src="" data-photo="aloe" alt="Aloe vera soap bar with fresh aloe vera" loading="lazy">
 </div>
 <div class="product-body">
 <h3>Aloe Vera Soap</h3>
 <p>Aloe-inspired care for a refreshing and comfortable bathing ritual.</p>
-<div class="product-bottom">
-<span class="price">₹40</span>
-<button class="add" onclick="addToCart('aloe')">Add to bag +</button>
-</div>
+<div class="product-bottom"><span class="price">₹40</span><button class="add" onclick="addToCart('aloe')">Add to bag +</button></div>
 </div>
 </article>
-
 <article class="product">
-<div class="product-visual clay">
+<div class="product-visual">
 <span class="tag">EARTHY BLEND</span>
-<div class="mini-soap">✧</div>
+<img class="product-photo" src="" data-photo="clay" alt="Neem and multani mitti soap bar with clay powder and neem leaves" loading="lazy">
 </div>
 <div class="product-body">
 <h3>Neem &amp; Multani Mitti Soap</h3>
 <p>An earthy blend inspired by traditional skincare ingredients.</p>
-<div class="product-bottom">
-<span class="price">₹50</span>
-<button class="add" onclick="addToCart('clay')">Add to bag +</button>
-</div>
+<div class="product-bottom"><span class="price">₹50</span><button class="add" onclick="addToCart('clay')">Add to bag +</button></div>
 </div>
 </article>
 </div>
 </div>
 </section>
-
+<section class="support-section" id="support">
+<div class="wrap support-inner">
+<div class="support-copy">
+<div class="eyebrow">Need help?</div>
+<h2>We're here to help you choose.</h2>
+<p>Questions about a soap or an order? Contact us directly.</p>
+</div>
+<div class="support-actions">
+<a class="support-btn whatsapp" href="https://wa.me/919358402756" target="_blank" rel="noopener">WhatsApp Support ↗</a>
+<a class="support-btn instagram" href="https://www.instagram.com/ayushi_herbalsoap/" target="_blank" rel="noopener">Follow on Instagram ↗</a>
+</div>
+</div>
+</section>
 <section class="hero" id="home">
 <div class="wrap hero-grid">
 <div>
@@ -230,30 +220,23 @@ footer{padding:35px 0 20px;background:#0d2f1d;color:#e8efd9}
 <h1>Nature's goodness.<br><span>Everyday care.</span></h1>
 <p>Discover Ayushi Herbal Soap — a nature-inspired collection made for your everyday bathing ritual. Find your favourite blend of neem, aloe vera and multani mitti.</p>
 <div class="hero-actions">
-<a class="btn" href="#products">Explore our soaps <span>→</span></a>
+<a class="btn" href="#products">Explore our soaps →</a>
 <a class="btn secondary" href="#about">Our philosophy</a>
 </div>
 </div>
 <div class="hero-art" aria-label="Illustration of three herbal soap bars">
-<span class="leaf l1">❧</span>
-<span class="leaf l2">❧</span>
-<div class="soap-stack">
-<div class="soap">✿</div>
-<div class="soap">❋</div>
-<div class="soap">❧</div>
-</div>
+<span class="leaf l1">❧</span><span class="leaf l2">❧</span>
+<div class="soap-stack"><div class="soap">✿</div><div class="soap">❋</div><div class="soap">❧</div></div>
 <div class="art-caption">HERBAL-INSPIRED • DAILY CARE</div>
 </div>
 </div>
 </section>
-
 <div class="wrap trust">
 <div><strong>🌿</strong>Nature-inspired ingredients</div>
 <div><strong>◈</strong>Everyday bathing ritual</div>
 <div><strong>♧</strong>Three signature blends</div>
 <div><strong>♡</strong>Made for your routine</div>
 </div>
-
 <section class="about" id="about">
 <div class="wrap about-grid">
 <div class="about-badge">
@@ -267,220 +250,161 @@ footer{padding:35px 0 20px;background:#0d2f1d;color:#e8efd9}
 <h2>Simple care, inspired by nature.</h2>
 <p>Ayushi Herbal Soap brings together familiar herbal inspirations in a clean, approachable bathing range. We believe product information should be clear, honest and easy to understand.</p>
 <div class="checks">
-<span>Clear product details</span>
-<span>Easy ordering</span>
-<span>Customer-first support</span>
-<span>Thoughtful presentation</span>
+<span>Clear product details</span><span>Easy ordering</span>
+<span>Customer-first support</span><span>Thoughtful presentation</span>
 </div>
-<p class="smallnote">Please confirm ingredient lists, manufacturing details, certifications and skin-related claims before publishing. Do not claim “100% natural” or “chemical-free” unless you can substantiate it.</p>
+<p class="smallnote">Confirm ingredient lists, product weight, manufacturing details and skin-related claims before publishing. Do not use claims you cannot substantiate.</p>
 </div>
 </div>
 </section>
-
 <div class="order-band">
 <div class="wrap order-row">
-<div>
-<h2>Your everyday ritual starts here.</h2>
-<p>Choose your soap and place an order in a few simple steps.</p>
-</div>
+<div><h2>Your everyday ritual starts here.</h2><p>Choose your soap and place an order in a few simple steps.</p></div>
 <a class="btn" href="#products">Shop the collection →</a>
 </div>
 </div>
 </main>
-
 <footer id="contact">
 <div class="wrap">
 <div class="footer-grid">
-<div>
-<h3>AYUSHI HERBAL SOAP</h3>
-<p>Nature-inspired bathing care. Discover the blend that fits your daily routine.</p>
+<div><h3>AYUSHI HERBAL SOAP</h3><p>Nature-inspired bathing care. Discover the blend that fits your daily routine.</p></div>
+<div><h4>Explore</h4><a href="#products">Shop soaps</a><a href="#about">Our story</a><a href="#contact">Contact</a></div>
+<div><h4>Get in touch</h4><p>WhatsApp orders and customer support</p><a href="https://wa.me/919358402756" target="_blank" rel="noopener">WhatsApp support</a><a href="#" onclick="openCart();return false">Start an order</a><a href="https://www.instagram.com/ayushi_herbalsoap/" target="_blank" rel="noopener">Instagram: @ayushi_herbalsoap</a></div>
 </div>
-<div>
-<h4>Explore</h4>
-<a href="#products">Shop soaps</a>
-<a href="#about">Our story</a>
-<a href="#contact">Contact</a>
-</div>
-<div>
-<h4>Get in touch</h4>
-<p>WhatsApp orders and customer support</p>
-<a href="https://wa.me/919358402756" target="_blank" rel="noopener">WhatsApp support</a>
-<a href="#" onclick="openCart();return false">Start an order</a>
-<a href="https://www.instagram.com/ayushi_herbalsoap/" target="_blank" rel="noopener">Instagram: @ayushi_herbalsoap</a>
-</div>
-</div>
-<div class="copyright">
-<span>© <span id="year"></span> Ayushi Herbal Soap</span>
-<span>Questions about an order? Contact us on WhatsApp or Instagram.</span>
-</div>
+<div class="copyright"><span>© <span id="year"></span> Ayushi Herbal Soap</span><span>Questions about an order? Contact us on WhatsApp or Instagram.</span></div>
 </div>
 </footer>
-
 <div class="cartpanel" id="cartpanel" onclick="if(event.target===this)closeCart()">
 <div class="cart">
-<div class="carthead">
-<h2>Your bag</h2>
-<button class="close" onclick="closeCart()">×</button>
-</div>
+<div class="carthead"><h2>Your bag</h2><button class="close" onclick="closeCart()">×</button></div>
 <div id="cart-items"></div>
 <div class="total"><span>Total</span><span id="cart-total">₹0</span></div>
-
-<div class="field">
-<label for="customer-name">Your name</label>
-<input id="customer-name" placeholder="Enter your name">
-</div>
-<div class="field">
-<label for="customer-phone">Phone number</label>
-<input id="customer-phone" inputmode="tel" placeholder="10-digit mobile number">
-</div>
-<div class="field">
-<label for="customer-address">Delivery address</label>
-<textarea id="customer-address" rows="2" placeholder="House, street, city, PIN code"></textarea>
-</div>
-
+<div class="field"><label for="customer-name">Your name</label><input id="customer-name" placeholder="Enter your name"></div>
+<div class="field"><label for="customer-phone">Phone number</label><input id="customer-phone" inputmode="tel" placeholder="10-digit mobile number"></div>
+<div class="field"><label for="customer-address">Delivery address</label><textarea id="customer-address" rows="2" placeholder="House, street, city, PIN code"></textarea></div>
 <button class="btn full" onclick="whatsappOrder()">Order on WhatsApp</button>
 <button class="btn secondary full" onclick="onlinePayment()">Continue to online payment</button>
-<p class="smallnote">Online payment will open your UPI app. Check the payee name and amount in your UPI app before approving payment.</p>
-<p class="smallnote">Please confirm your order, delivery charges and payment details before completing a purchase.</p>
+<p class="smallnote">UPI opens on your device. Check the payee name and amount in your UPI app before approving payment. Payment is not automatically confirmed by this website.</p>
+<p class="smallnote">Please confirm delivery charges and the final total before completing a purchase.</p>
 </div>
 </div>
-
 <script>
-/* CONFIG — verify these values before accepting orders */
-const CONFIG = {
-  whatsappNumber: "919358402756",
-  upiId: "ayushihurble@paytm",
-  instagramUrl: "https://www.instagram.com/ayushi_herbalsoap/",
-  paymentUrl: ""
+const CONFIG={whatsappNumber:"919358402756",upiId:"ayushihurble@paytm",paymentUrl:""};
+const SOAP_IMAGES={
+  neem:[
+    "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"
+  ].join(""),
+  aloe:[
+    "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"
+  ].join(""),
+  clay:[
+    "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"
+  ].join("")
 };
+document.querySelectorAll("[data-photo]").forEach(img=>{img.src="data:image/webp;base64,"+SOAP_IMAGES[img.dataset.photo]});
+const products={neem:{name:"Neem Herbal Soap",price:40},aloe:{name:"Aloe Vera Soap",price:40},clay:{name:"Neem & Multani Mitti Soap",price:50}};
+const LOCAL_DELIVERY_FEE=0;
+const bag={};
+function addToCart(id){bag[id]=(bag[id]||0)+1;renderCart();document.getElementById('cartpanel').classList.add('open')}
+function changeQty(id,delta){bag[id]=(bag[id]||0)+delta;if(bag[id]<=0)delete bag[id];renderCart()}
+function total(){return Object.keys(bag).reduce((sum,id)=>sum+products[id].price*bag[id],0)}
+function renderCart(){const count=Object.values(bag).reduce((a,b)=>a+b,0);document.getElementById('cart-count').textContent=count;const ids=Object.keys(bag);document.getElementById('cart-items').innerHTML=ids.length?ids.map(id=>`<div class="cartitem"><div><strong>${products[id].name}</strong><div class="smallnote">₹${products[id].price} each</div></div><div class="qty"><button onclick="changeQty('${id}',-1)">−</button><strong>${bag[id]}</strong><button onclick="changeQty('${id}',1)">+</button></div></div>`).join(''):'<p>Your bag is empty. Add a soap to begin.</p>';document.getElementById('cart-total').textContent='₹'+total()}
+function openCart(){document.getElementById('cartpanel').classList.add('open')}
+function closeCart(){document.getElementById('cartpanel').classList.remove('open')}
+function orderText(){
+ const ids=Object.keys(bag);
+ if(!ids.length){alert('Please add a soap to your bag first.');return null}
+ const name=document.getElementById('customer-name').value.trim();
+ const phone=document.getElementById('customer-phone').value.trim();
+ const address=document.getElementById('customer-address').value.trim();
+ if(!name||!phone||!address){alert('Please enter your name, phone number and delivery address.');return null}
+ return `Hello Ayushi Herbal Soap, I would like to place an order:
 
-const products = {
-  neem: {name:"Neem Herbal Soap",price:40},
-  aloe: {name:"Aloe Vera Soap",price:40},
-  clay: {name:"Neem & Multani Mitti Soap",price:50}
-};
-
-const LOCAL_DELIVERY_FEE = 0;
-const bag = {};
-
-function addToCart(id) {
-  bag[id] = (bag[id] || 0) + 1;
-  renderCart();
-  document.getElementById("cartpanel").classList.add("open");
-}
-
-function changeQty(id, delta) {
-  bag[id] = (bag[id] || 0) + delta;
-  if (bag[id] <= 0) delete bag[id];
-  renderCart();
-}
-
-function total() {
-  return Object.keys(bag).reduce(
-    (sum, id) => sum + products[id].price * bag[id], 0
-  );
-}
-
-function renderCart() {
-  const count = Object.values(bag).reduce((a, b) => a + b, 0);
-  document.getElementById("cart-count").textContent = count;
-
-  const ids = Object.keys(bag);
-  document.getElementById("cart-items").innerHTML = ids.length
-    ? ids.map(id => `
-      <div class="cartitem">
-        <div>
-          <strong>${products[id].name}</strong>
-          <div class="smallnote">₹${products[id].price} each</div>
-        </div>
-        <div class="qty">
-          <button onclick="changeQty('${id}',-1)">−</button>
-          <strong>${bag[id]}</strong>
-          <button onclick="changeQty('${id}',1)">+</button>
-        </div>
-      </div>`).join("")
-    : "<p>Your bag is empty. Add a soap to begin.</p>";
-
-  document.getElementById("cart-total").textContent = "₹" + total();
-}
-
-function openCart() {
-  document.getElementById("cartpanel").classList.add("open");
-}
-
-function closeCart() {
-  document.getElementById("cartpanel").classList.remove("open");
-}
-
-function orderText() {
-  const ids = Object.keys(bag);
-
-  if (!ids.length) {
-    alert("Please add a soap to your bag first.");
-    return null;
-  }
-
-  const name = document.getElementById("customer-name").value.trim();
-  const phone = document.getElementById("customer-phone").value.trim();
-  const address = document.getElementById("customer-address").value.trim();
-
-  if (!name || !phone || !address) {
-    alert("Please enter your name, phone number and delivery address.");
-    return null;
-  }
-
-  return `Hello Ayushi Herbal Soap, I would like to place an order:
-
-${ids.map(id => `${products[id].name} × ${bag[id]} = ₹${products[id].price * bag[id]}`).join("\n")}
+${ids.map(id=>`${products[id].name} × ${bag[id]} = ₹${products[id].price*bag[id]}`).join('\n')}
 
 Items subtotal: ₹${total()}
 Local delivery: ₹${LOCAL_DELIVERY_FEE}
-Estimated total: ₹${total() + LOCAL_DELIVERY_FEE}
+Estimated total: ₹${total()+LOCAL_DELIVERY_FEE}
 Name: ${name}
 Phone: ${phone}
 Address: ${address}
 
 Please confirm availability, delivery charges and final total.`;
 }
-
-function whatsappOrder() {
-  const msg = orderText();
-  if (!msg) return;
-
-  if (!/^\d{10,15}$/.test(CONFIG.whatsappNumber)) {
-    alert("Please verify the WhatsApp number in the CONFIG section.");
-    return;
-  }
-
-  window.open(
-    "https://wa.me/" + CONFIG.whatsappNumber + "?text=" + encodeURIComponent(msg),
-    "_blank"
-  );
+function whatsappOrder(){const msg=orderText();if(!msg)return;if(!/^\d{10,15}$/.test(CONFIG.whatsappNumber)){alert('Please verify your WhatsApp number.');return}window.open('https://wa.me/'+CONFIG.whatsappNumber+'?text='+encodeURIComponent(msg),'_blank','noopener')}
+function onlinePayment(){
+ if(!orderText())return;
+ if(CONFIG.paymentUrl){window.open(CONFIG.paymentUrl,'_blank','noopener');return}
+ if(!/^[A-Za-z0-9._-]+@[A-Za-z0-9.-]+$/.test(CONFIG.upiId)){alert('Please verify the UPI ID in the CONFIG section first.');return}
+ const url='upi://pay?pa='+encodeURIComponent(CONFIG.upiId)+'&pn='+encodeURIComponent('Ayushi Herbal Soap')+'&am='+encodeURIComponent((total()+LOCAL_DELIVERY_FEE).toFixed(2))+'&cu=INR&tn='+encodeURIComponent('Ayushi Herbal Soap order');
+ window.location.href=url;
 }
-
-function onlinePayment() {
-  const msg = orderText();
-  if (!msg) return;
-
-  if (CONFIG.paymentUrl) {
-    window.open(CONFIG.paymentUrl, "_blank");
-    return;
-  }
-
-  if (!/^[A-Za-z0-9._-]+@[A-Za-z0-9.-]+$/.test(CONFIG.upiId)) {
-    alert("Please verify the UPI ID in the CONFIG section first.");
-    return;
-  }
-
-  const upiUrl = "upi://pay?pa=" + encodeURIComponent(CONFIG.upiId)
-    + "&pn=" + encodeURIComponent("Ayushi Herbal Soap")
-    + "&am=" + encodeURIComponent((total() + LOCAL_DELIVERY_FEE).toFixed(2))
-    + "&cu=INR&tn=" + encodeURIComponent("Ayushi Herbal Soap order");
-
-  window.location.href = upiUrl;
-}
-
-document.getElementById("year").textContent = new Date().getFullYear();
+document.getElementById('year').textContent=new Date().getFullYear();
 renderCart();
 </script>
 </body>
